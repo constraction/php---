@@ -1,0 +1,575 @@
+# Translation of Themes - Square in Chinese (China)
+# This file is distributed under the same license as the Themes - Square package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-06-19 02:27:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Themes - Square\n"
+
+#. Description of the plugin/theme
+msgid "Square is a flexible responsive multipurpose theme compatible with all browsers and devices, fully mobile friendly, loaded with lots of features. It is a minimal theme based on WordPress Customizer that allows you to customize with live preview. The theme can be used for business, corporate, digital agency, personal, portfolio, photography, parallax, blogs and magazines. Square is eCommerce (WooCommerce) Compatible, Polylang Compatible, WPML, RTL, Retina Ready, SEO Friendly and Support bbPress and BuddyPress. More over it is a complete theme. For demo http://demo.hashthemes.com/square"
+msgstr "方（Square）是一个灵活的响应多用途主题，与所有设备和浏览器兼容，能够完全友好的支持移动设备，同时加载了许多功能。 它是一个基于 WordPress 定制程序的小型化主题，允许您使用实时预览进行自定义调整。 主题可以用于商业，企业，数字代理，个人，投资组合，摄影，视差，博客和杂志。 Square 与电子商务（WooCommerce）兼容，Polylang 兼容，WPML，RTL，视网膜屏幕支持，对SEO友好和支持bbPress和BuddyPress。 总之这是一个完整的主题。 演示地址 http://demo.hashthemes.com/square"
+
+#. Theme Name of the plugin/theme
+msgid "Square"
+msgstr "方"
+
+#. translators: link
+#: inc/customizer.php:875
+msgid "Please do rate our theme if you liked it %s"
+msgstr "如果你喜欢，请给我们的主题投票 %s"
+
+#: inc/customizer.php:854
+msgid "Like Us in Facebook"
+msgstr "在脸书上关注我们"
+
+#: inc/customizer.php:854
+msgid "Support Forum"
+msgstr "支持论坛"
+
+#: inc/customizer.php:854
+msgid "Live Demo"
+msgstr "在线演示"
+
+#: inc/customizer.php:835
+msgid "Important Links"
+msgstr "重要链接"
+
+#: inc/customizer.php:124
+msgid "This banner will show in the header of all the inner pages <br/>Recommended Image Size: 1800X400px"
+msgstr "此横幅将显示在所有内页的页头中<br/>建议图片大小：1800X400像素"
+
+#: inc/customizer.php:79
+msgid "Disable Sticky Header"
+msgstr "禁用粘性页头"
+
+#: inc/customizer.php:61
+msgid "Header Settings"
+msgstr "页头设置"
+
+#: inc/widgets/widget-personal-info.php:40
+msgid "Short Intro"
+msgstr "简要介绍"
+
+#: inc/widgets/widget-personal-info.php:35
+msgid "Image"
+msgstr "图像"
+
+#: inc/widgets/widget-personal-info.php:17
+msgid "A widget to display Personal Information"
+msgstr "用于显示个人信息的插件"
+
+#: inc/widgets/widget-fields.php:145
+msgid "Select Image"
+msgstr "选择图像"
+
+#: inc/widgets/widget-fields.php:144
+msgid "Remove"
+msgstr "移除"
+
+#: inc/widgets/widget-fields.php:137
+msgid "No image selected"
+msgstr "图像未选择"
+
+#: inc/widgets/widget-contact-info.php:56
+msgid "Contact Time"
+msgstr "联系时间"
+
+#: inc/widgets/widget-contact-info.php:50
+msgid "Contact Address"
+msgstr "联系地址"
+
+#: inc/widgets/widget-contact-info.php:35
+msgid "Phone"
+msgstr "电话"
+
+#: inc/widgets/widget-contact-info.php:17
+msgid "A widget to display Contact Information"
+msgstr "显示联系人信息的插件"
+
+#: inc/customizer.php:1007
+msgid "Clear"
+msgstr "清除"
+
+#: inc/customizer.php:1006
+msgid "Add/Edit Gallery"
+msgstr "添加/编辑图库"
+
+#: inc/customizer.php:485
+msgid "Recommended Image Size: 400X420px <br/> Leave the gallery empty for Full Width Text"
+msgstr "推荐的图想大小：400X420像素 <br/> 将全宽文本的图库留空"
+
+#: template-parts/content-summary.php:39
+msgid "Read More"
+msgstr "阅读更多"
+
+#: inc/customizer.php:173
+msgid "Disable Share Buttons"
+msgstr "禁用共享按钮"
+
+#: inc/customizer.php:149
+msgid "Blog Content Format"
+msgstr "博客内容格式"
+
+#: inc/customizer.php:133
+msgid "Blog Settings"
+msgstr "博客设置"
+
+#: inc/customizer.php:827
+msgid "Instagram"
+msgstr "Instagram"
+
+#: woocommerce/single-product-reviews.php:114
+msgid "Only logged in customers who have purchased this product may leave a review."
+msgstr "只有购买过此产品的已登录客户才可发表评论"
+
+#: woocommerce/single-product-reviews.php:105
+msgid "Your Review"
+msgstr "您的评论"
+
+#: woocommerce/single-product-reviews.php:101
+msgid "Very poor"
+msgstr "很差"
+
+#: woocommerce/single-product-reviews.php:100
+msgid "Not that bad"
+msgstr "还行"
+
+#: woocommerce/single-product-reviews.php:99
+msgid "Average"
+msgstr "一般"
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Good"
+msgstr "好"
+
+#: woocommerce/single-product-reviews.php:97
+msgid "Perfect"
+msgstr "完美"
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Rate&hellip;"
+msgstr "评价&hellip;"
+
+#: woocommerce/single-product-reviews.php:95
+msgid "Your rating"
+msgstr "您的评价"
+
+#. translators: account page url
+#: woocommerce/single-product-reviews.php:90
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr "您需要在 <a href=\"%s\">登录</a>后发表评论。."
+
+#: woocommerce/single-product-reviews.php:82
+msgid "Submit"
+msgstr "发送"
+
+#: woocommerce/single-product-reviews.php:80
+msgid "Email*"
+msgstr "电子邮件*"
+
+#: woocommerce/single-product-reviews.php:79
+msgid "Name*"
+msgstr "名字*"
+
+#. translators: Title
+#: woocommerce/single-product-reviews.php:73
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "成为 &ldquo;%s&rdquo; 的第一个评价者"
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Add a review"
+msgstr "添加评论"
+
+#: woocommerce/single-product-reviews.php:58
+msgid "There are no reviews yet."
+msgstr "目前还末有评论"
+
+#: inc/square-metabox.php:16
+msgid "Sidebar Layout"
+msgstr "侧边栏布局"
+
+#: inc/customizer.php:644
+msgid "Section Title & Logo"
+msgstr "章节标题和标志"
+
+#: inc/customizer.php:513
+msgid "Disable Tab Section "
+msgstr "禁用选项卡部分"
+
+#: inc/customizer.php:406
+msgid "Disable About Section "
+msgstr "禁用关于部件"
+
+#: functions.php:99
+msgid "Shop Sidebar"
+msgstr "商店侧栏"
+
+#: inc/customizer.php:685
+msgid "Recommended Image Size: 220X90px"
+msgstr "推荐图像大小：220X90像素"
+
+#: inc/customizer.php:623
+msgid "Disable Client Logo Section "
+msgstr "禁用客户端标志部件"
+
+#: inc/customizer.php:315
+msgid "Enable Read More link "
+msgstr "启用阅读更多链接"
+
+#: inc/customizer.php:284
+msgid "Recommended Image Size: 1800X800px"
+msgstr "推荐图像大小：1800X800像素"
+
+#: functions.php:79
+msgid "Right Sidebar"
+msgstr "边栏在右侧"
+
+#: inc/customizer.php:121
+msgid "Page Header Banner"
+msgstr "页眉横幅"
+
+#: template-parts/content-summary.php:41 template-parts/content.php:35
+msgid "Continue reading &rarr;"
+msgstr "阅读更多 &rarr;"
+
+#: inc/customizer.php:101
+msgid "Header Background Color"
+msgstr "头部背景色"
+
+#: inc/customizer.php:26
+msgid "Black"
+msgstr "黑色"
+
+#: inc/customizer.php:25
+msgid "White"
+msgstr "白色"
+
+#: front-page.php:24 inc/customizer.php:252 templates/home-template.php:15
+msgid "Create website in no time"
+msgstr "立即创建网站"
+
+#: front-page.php:23 inc/customizer.php:233 templates/home-template.php:14
+msgid "Free WordPress Themes"
+msgstr "免费的 WordPress 主题"
+
+#: inc/customizer.php:808
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+#: inc/customizer.php:789
+msgid "Youtube"
+msgstr "YouTube"
+
+#: inc/customizer.php:770
+msgid "Pinterest"
+msgstr "Printerest"
+
+#: inc/customizer.php:751
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/customizer.php:732
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/customizer.php:713
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/customizer.php:694
+msgid "Footer Social Icons"
+msgstr "页脚社交图标"
+
+#. Template Name of the plugin/theme
+msgid "Home Page"
+msgstr "主页"
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:27
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#: template-parts/content-page.php:16 template-parts/content-single.php:20
+#: template-parts/content-summary.php:44 template-parts/content.php:40
+msgid "Pages:"
+msgstr "独立分页："
+
+#: template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "我们可能无法找到您需要的内容。或许搜索功能可以帮到您。"
+
+#: template-parts/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "抱歉，没有符合您搜索条件的结果。请换其它关键词再试。"
+
+#. translators: Link
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发布第一篇文章了？<a href=\"%1$s\">从这里开始</a>。"
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "未有发现"
+
+#. translators: Search Query
+#: search.php:14
+msgid "Search Results for: %s"
+msgstr "针对以下内容的搜索结果：%s"
+
+#: inc/template-tags.php:47
+msgid " Comment Closed"
+msgstr "评论关闭"
+
+#: inc/template-tags.php:43
+msgid "1 Comment"
+msgstr "一条评论"
+
+#: inc/template-tags.php:41
+msgid " Comments"
+msgstr "评论"
+
+#: inc/template-tags.php:39
+msgid "No Comments"
+msgstr "没有评论"
+
+#. translators: author
+#: inc/template-tags.php:31
+msgctxt "post author"
+msgid "by %s"
+msgstr "由 %s"
+
+#. translators: 1: comment date, 2: comment time
+#: inc/square-functions.php:98
+msgid "%1$s at %2$s"
+msgstr "%1$s 在 %2$s"
+
+#: inc/square-functions.php:86
+msgid "Edit"
+msgstr "离开"
+
+#: inc/square-functions.php:84
+msgid "Your comment is awaiting moderation."
+msgstr "你的评论正等待审核"
+
+#: inc/customizer.php:684
+msgid "Upload Clients Logos"
+msgstr "上传客户端标志"
+
+#: inc/customizer.php:664 inc/widgets/widget-contact-info.php:30
+#: inc/widgets/widget-personal-info.php:30
+msgid "Title"
+msgstr "书名"
+
+#: inc/customizer.php:605
+msgid "Clients Logo Section"
+msgstr "客户端标志部件"
+
+#: inc/customizer.php:555
+msgid "Tab Title"
+msgstr "标签标题"
+
+#: inc/customizer.php:535
+msgid "Tab "
+msgstr "标签"
+
+#: inc/customizer.php:495
+msgid "Tab Section"
+msgstr "标签部件"
+
+#: inc/customizer.php:484
+msgid "About Us Stack Image"
+msgstr "关于我们堆栈图像"
+
+#: inc/customizer.php:464
+msgid "About Page Stack Images"
+msgstr "关于页面堆栈图像"
+
+#: inc/customizer.php:426
+msgid "About Page "
+msgstr "关于页面"
+
+#: inc/customizer.php:388
+msgid "About Us Section"
+msgstr "关于我们部件"
+
+#: inc/customizer.php:376 inc/customizer.php:576
+msgid "FontAwesome Icon"
+msgstr "FontAwesome 图标"
+
+#: inc/customizer.php:356 inc/customizer.php:445 inc/customizer.php:595
+msgid "Select a Page"
+msgstr "选择一个页面"
+
+#: inc/customizer.php:337
+msgid "Featured Page "
+msgstr "特色页面"
+
+#: inc/customizer.php:297
+msgid "Featured Section"
+msgstr "特色部件"
+
+#: inc/customizer.php:281
+msgid "Slider Image"
+msgstr "滑块图片"
+
+#: inc/customizer.php:264
+msgid "Caption SubTitle"
+msgstr "字幕副标题"
+
+#: inc/customizer.php:245
+msgid "Caption Title"
+msgstr "字幕标题 "
+
+#: inc/customizer.php:225
+msgid "Slider "
+msgstr "滑块"
+
+#: inc/customizer.php:202
+msgid "Slider Section"
+msgstr "幻灯器部件"
+
+#: inc/customizer.php:193
+msgid "Home Page Sections"
+msgstr "首页部件"
+
+#: inc/customizer.php:185
+msgid "Colors"
+msgstr "颜色"
+
+#: inc/customizer.php:180
+msgid "Background Image"
+msgstr "背景图片"
+
+#: inc/customizer.php:53
+msgid "Header Logo"
+msgstr "标题 Logo"
+
+#: inc/customizer.php:47
+msgid "Site Title & Tagline"
+msgstr "站点标题和副标题"
+
+#: inc/customizer.php:42
+msgid "Your theme supports a static front page."
+msgstr "您的主题提供静态首页支持。"
+
+#: inc/customizer.php:40
+msgid "Static Front Page"
+msgstr "静态首页"
+
+#: inc/customizer.php:33
+msgid "General Settings"
+msgstr "主要设置"
+
+#. Translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:193
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:185
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:177
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:149
+msgid "About Footer"
+msgstr "关于页脚"
+
+#: functions.php:139
+msgid "Footer 4"
+msgstr "页脚 4"
+
+#: functions.php:129
+msgid "Footer 3"
+msgstr "页脚 3"
+
+#: functions.php:119
+msgid "Footer 2"
+msgstr "页脚 2"
+
+#: functions.php:109
+msgid "Footer 1"
+msgstr "页脚 1"
+
+#: functions.php:89
+msgid "Left Sidebar"
+msgstr "边栏在左侧"
+
+#: functions.php:35
+msgid "Primary Menu"
+msgstr "主要菜单"
+
+#. translators: 1: link 2: Theme name
+#: footer.php:66
+msgid "%1$s by %2$s"
+msgstr "%1$s 由 %2$s"
+
+#: footer.php:62
+msgid "WordPress Theme"
+msgstr "WordPress 主题"
+
+#: comments.php:77
+msgid "Comment"
+msgstr "条评论"
+
+#: comments.php:71 inc/widgets/widget-contact-info.php:45
+msgid "Website"
+msgstr "站点"
+
+#: comments.php:67 inc/widgets/widget-contact-info.php:40
+msgid "Email"
+msgstr "邮箱地址"
+
+#: comments.php:63 inc/widgets/widget-personal-info.php:46
+msgid "Name"
+msgstr "商店名字"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+#. translators: 1: comment count number
+#: comments.php:30
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "%1$s 条评论"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "有点尴尬诶！该页无法显示。"
+
+#: 404.php:12
+msgid "404 Error"
+msgstr "404 Error"
+
+#. Theme URI of the plugin/theme
+msgid "https://hashthemes.com/wordpress-theme/square/"
+msgstr "https://hashthemes.com/wordpress-theme/square/"
+
+#. Author URI of the plugin/theme
+msgid "https://hashthemes.com"
+msgstr "https://hashthemes.com"
+
+#. Author of the plugin/theme
+msgid "HashThemes"
+msgstr "HashThemes"

@@ -1,0 +1,23 @@
+<?php
+	$query = mysql_connect('localhost','root','0000');
+	$result = $query->mysql_query('select * from home');
+	while($row = mysql_fetch_array($result))
+	{
+		echo $row['*'];
+	}
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div class="list" >
+			<?php
+				echo $row['*']
+			?>
+			
+		</div>
+	</body>
+</html>
