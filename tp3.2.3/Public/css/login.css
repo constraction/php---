@@ -1,0 +1,112 @@
+body
+{
+	background-image:url(../img/bglogin.png);
+	/*background-color: #000000;*/
+	padding: 0,0,0,0;
+}
+
+.login
+{
+	padding: 0,0,0,0;
+	width: 608px;
+	height: 450px;
+	/*text-align: center;*/
+	position:absolute;
+	top: 284px;
+    left: 335px;
+}
+
+.acc
+{
+	background-image: url(../img/acc.png);
+	width: 277px;
+	height: 47px;
+	position: absolute;
+	top: 150px ;
+	right: 170px;
+}
+
+.pwd
+{
+	background-image: url(../img/pwd.png);
+	width: 277px;
+	height: 47px;
+	position: absolute;
+	top: 230px ;
+	right: 170px;
+}
+
+#userAcc
+{
+	width: 213px;
+	height: 40px;
+	position: absolute;
+	left: 60px;
+	top: 2px;
+	font-size: 30px;
+	outline: none;/*隐藏焦点边框*/
+	border: none;/*隐藏文本框边框*/
+}
+
+#userPwd
+{
+	width: 213px;
+	height: 40px;
+	position: absolute;
+	left: 60px;
+	top: 2px;
+	font-size: 30px;
+	outline: none;/*隐藏焦点边框*/
+	border: none;/*隐藏文本框边框*/
+}
+
+.lg
+{
+	/*background-image: url(../img/lg.png);*/
+	width: 276px;
+	height: 47px;
+	position: absolute;
+	top: 330px ;
+	right: 170px;
+	text-align: center
+}
+
+p
+{
+	font-size: 18px;
+	margin: auto;
+	position: absolute;
+	top: 12px;
+	left: 100px;
+}
+
+#btm_lg
+{
+	width: 276px;
+	height: 47px;
+	background-image: url(../img/lg2.png);
+	/*outline: none;*//*隐藏焦点边框*/
+	border: none;/*隐藏文本框边框*/
+}
+
+.other
+{
+	width: 276px;
+	/*height: 47px;*/
+	position: absolute;
+	top: 390px ;
+	right: 170px;
+	/*text-align: center*/
+}
+
+#reg
+{
+	color: darkorange;
+}
+
+#forget_pwd
+{
+	color: #0099CC;
+	position: absolute;
+	left: 200px;
+}

@@ -1,0 +1,60 @@
+[ 2019-06-17T13:31:20+08:00 ] ::1 /Theme/login/select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+ERR: 无法加载控制器:Theme
+
+[ 2019-06-17T13:31:42+08:00 ] ::1 /login/select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 345 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 390 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 391 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 392 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 393 行.
+ERR: 模板不存在:./Theme/./Login_select().html
+
+[ 2019-06-17T13:36:50+08:00 ] ::1 /login_select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+ERR: 无法加载控制器:Login_select
+
+[ 2019-06-17T13:36:59+08:00 ] ::1 /login/select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 345 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 390 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 391 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 392 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 393 行.
+ERR: 模板不存在:./Theme/./Login_select().html
+
+[ 2019-06-17T13:48:14+08:00 ] ::1 /login/select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 345 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 390 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 391 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 392 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\tp3.2.3\Apps\Home\Controller\LoginController.class.php 第 393 行.
+ERR: 模板不存在:./Theme/./Login_select().html
+
