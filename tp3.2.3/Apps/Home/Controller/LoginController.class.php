@@ -205,7 +205,7 @@ class LoginController extends Controller {
 			$english=$datas[$i]["english"];
 			$math=$datas[$i]["math"];
 			$status=$datas[$i]["status"];
-			//多维数组逐条插入 studioi 表
+			//多维数组逐条插入 student 表
 			mysql_query(
 			"insert into student(name,chinese,english,math,status)
 			 values ('$name','$chinese','$english','$math','$status')");
