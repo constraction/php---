@@ -1,0 +1,1 @@
+a:7:{i:0;s:3:"uid";i:1;s:4:"name";i:2;s:3:"acc";i:3;s:3:"pwd";i:4;s:6:"status";s:3:"_pk";s:3:"uid";s:5:"_type";a:5:{s:3:"uid";s:7:"int(11)";s:4:"name";s:12:"varchar(255)";s:3:"acc";s:12:"varchar(255)";s:3:"pwd";s:12:"varchar(255)";s:6:"status";s:9:"binary(1)";}}
