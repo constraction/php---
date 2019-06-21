@@ -1,6 +1,6 @@
 <?php
 namespace Home\Model;
-use Think\Moder;
+use Think\Model;
 use Home\Controller\LoginController;
 class LoginModel extends Model 
 {
@@ -27,9 +27,9 @@ class LoginModel extends Model
      * 自动完成
      * 静态方式：在模型类里面通过$_auto属性定义处理规则。
      */
-    protected $_auto = array(
-        /* 登录时自动完成 */
-        # 对password字段使用md5函数处理
-        array('password', 'md5', 3, 'function'),
-    );
+    // protected $_auto = array(
+    //     /* 登录时自动完成 */
+    //     # 对password字段使用md5函数处理
+    //     array('password', 'md5', 3, 'function'),
+    // );
 }

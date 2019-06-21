@@ -51,7 +51,7 @@
 				<div class="submit-w3l">
 					<input type="submit" value="登录">
 				</div>
-				<p class="p-bottom-w3ls">如果你没有账号来<a href="../Reg/signup.html">这里注册一个</a></p>
+				<p class="p-bottom-w3ls">如果你没有账号来<a href="../Reg/index">这里注册一个</a></p>
 			</form>
 		</div>
 		</div>

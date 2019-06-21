@@ -1,6 +1,6 @@
 <?php
 namespace Home\Model;
-use Think\Moder;
+use Think\Model;
 class RegModel extends Model {
    /**
      * 用户注册自动验证(静态验证：$_validate)

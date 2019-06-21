@@ -1,10 +1,11 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-use Model\UserModel;
-class LoginController extends Controller {
-    public function show()
+class ShowController extends Controller {
+    public function index()
     {
+        $names=session('name');
+        echo '<h1>Welcome! '.$names.'</h1>';
         $this -> display('Apps\Home\View\Show\show.html');
     }
 }
