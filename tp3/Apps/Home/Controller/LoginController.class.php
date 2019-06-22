@@ -15,7 +15,7 @@ class LoginController extends Controller {
         # 判断提交方式
         if (IS_POST) {
             # 实例化Login对象
-            $login = D('user');
+            $login = new LoginModel();
             # 通过create()调用对应的模型进行自动验证 创建数据集
             # $data = 获取用户输入的信息
             $data = $login->create();
