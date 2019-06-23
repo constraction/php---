@@ -9,4 +9,9 @@ class ShowController extends Controller {
         $grd->index();
         $this -> display('Apps\Home\View\Show\show.html');
     }
+    public function result()
+    {
+        $show=new ShowModel();
+        $show->result();
+    }
 }
