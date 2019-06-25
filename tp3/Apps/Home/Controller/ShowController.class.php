@@ -7,11 +7,13 @@ class ShowController extends Controller {
     {
         $grd=new ShowModel();
         $grd->index();
+        $show=new ShowModel();
+        $show->result();
         $this -> display('Apps\Home\View\Show\show.html');
     }
     public function result()
     {
-        $show=new ShowModel();
-        $show->result();
+        session('name',null);
+        $this->display('Apps\Home\View\Login\login.html');
     }
 }
