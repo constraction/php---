@@ -5,7 +5,7 @@ class ShowModel extends Model{
     protected $tableName = 'results';
     public function index()
     {
-        
+        echo" session('name')";
     }
     public function result()
     {
@@ -44,11 +44,8 @@ class ShowModel extends Model{
         );
         // dump($data['0']);
         echo "<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>";
-        echo "<form>";
-        echo "<div>";
+        
             echo "<table>";
-            $ss=session('name');
-                echo "<h2 style='text-align:center'>".$ss."的成绩单</h2>";
                 echo "<thead>";
                         echo "<tr>";
                                 echo "<th>姓名</th>";
@@ -72,8 +69,6 @@ class ShowModel extends Model{
                     echo "</tr>";
                 echo "</tbody>";
             echo "</table>";
-        echo "</div>";
-    echo "</form>";
         
     }
 }
