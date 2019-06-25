@@ -3,13 +3,13 @@ namespace Home\Controller;
 use Think\Controller;
 use Home\Model\ForgotModel;
 class ForgotController extends Controller {
-    public function index(){
-        echo "1";
+    public function index()
+    {
         $this->display('Apps\Home\View\Forgot\forget.html');
     }
-    public function forget(){ 
+    public function forget()
+    { 
         header("Content-type:text/html;charset=utf-8");
-
         $name=I('post.Username');
         $pwd=I('post.Password1');
         $data['pwd']=$pwd;
@@ -23,7 +23,6 @@ class ForgotController extends Controller {
             // 如果创建失败 表示验证没有通过 输出错误提示信息
                 exit($user->getError());
         }else {
-            
             //如果用户输入的都符合条件的话
             //插入数据库
             $id = $user

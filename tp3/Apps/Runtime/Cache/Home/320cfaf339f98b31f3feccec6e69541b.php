@@ -7,7 +7,7 @@
 <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
 <script type="application/x-javascript">
 	addEventListener("load", function() 
-	 	{ 
+		{ 
 			setTimeout(hideURLbar, 0); 
 		}, false); 
 	function hideURLbar()
@@ -37,30 +37,31 @@
 			</div>
 
 <div class="top-buttons-agileinfo">
-<a href="../Login/index"  class="active">登录</a><a href="../Reg/index">注册</a>
+<!-- <a href="../Login/index">登录</a><a href="../Reg/index" class="active">注册</a> -->
 </div>
 <h1>学生成绩记录系统</h1>
 <div class="main-agileits">
 <!--form-stars-here-->
 		<div class="form-w3-agile">
-			<h2 class="sub-agileits-w3layouts">登录</h2>
-			<form action="<?php echo U('Login/login');?>" method="post">
+			<h2 class="sub-agileits-w3layouts">忘记密码</h2>
+			<form method="post">
 					<input type="text" name="Username" placeholder="用户名" required="" />
-					<input type="password" name="Password" placeholder="密码" required="" />
-					<a href="<?php echo U('Forgot/index');?>" class="forgot-w3layouts">忘记密码 ？</a>
+					<input type="password" name="Password1" placeholder="密码" required="" />
+					<input type="password" name="Password2" placeholder="重复密码" required="" />
 				<div class="submit-w3l">
-					<input type="submit" value="登录">
+					<input type="submit" value="修改" formaction="<?php echo U('Forgot/forget');?>">
 				</div>
-				<p class="p-bottom-w3ls">如果你没有账号来<a href="../Reg/index">这里注册一个</a></p>
+				<!-- <p class="p-bottom-w3ls">如果你有账号来<a href="../Login/index">这里登录</a></p> -->
 			</form>
 		</div>
 		</div>
 <!--//form-ends-here-->
 <!-- copyright -->
 	<div class="copyright w3-agile">
-		<p> © 2019 Internship Sign In & Sign Up Form . All rights reserved | Design by <a href="http://www.xmoban.cn/" target="_blank">xmoban.cn</a></p>
+		<p> © 2017 Internship Sign In & Sign Up Form . All rights reserved | Design by <a href="http://www.xmoban.cn/" target="_blank">xmoban.cn</a></p>
 	</div>
 	<!-- //copyright --> 
 	<script type="text/javascript" src="../../../../Public/js/jquery-2.1.4.min.js"></script>
+
 </body>
 </html>

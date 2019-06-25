@@ -44,12 +44,12 @@
 <!--form-stars-here-->
 		<div class="form-w3-agile">
 			<h2 class="sub-agileits-w3layouts">忘记密码</h2>
-			<form action="{:U('Forgot/forget')}" method="post">
+			<form method="post">
 					<input type="text" name="Username" placeholder="用户名" required="" />
 					<input type="password" name="Password1" placeholder="密码" required="" />
 					<input type="password" name="Password2" placeholder="重复密码" required="" />
 				<div class="submit-w3l">
-					<input type="submit" value="修改">
+					<input type="submit" value="修改" formaction="{:U('Forgot/forget')}">
 				</div>
 				<!-- <p class="p-bottom-w3ls">如果你有账号来<a href="../Login/index">这里登录</a></p> -->
 			</form>
