@@ -1,184 +1,540 @@
-[ 2019-06-26T11:10:18+08:00 ] ::1 /index.php/Home/Show/index
+[ 2019-06-26T16:15:20+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `results` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0007s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009736s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009807s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013221s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001450s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
 
-[ 2019-06-26T11:10:19+08:00 ] ::1 /index.php/Home/Show/table.html
+[ 2019-06-26T16:15:32+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
-SQL: SHOW COLUMNS FROM `results` [ RunTime:0.0121s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0151s ]
-SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
-
-[ 2019-06-26T11:12:53+08:00 ] ::1 /index.php/Home/Show/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001655s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0147s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010944s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.011015s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014220s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001211s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001990s ]
 
-[ 2019-06-26T11:12:54+08:00 ] ::1 /index.php/Home/Show/table.html
+[ 2019-06-26T16:15:40+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001622s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
-SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='' ) LIMIT 1   [ RunTime:0.0007s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002160s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
-
-[ 2019-06-26T11:13:06+08:00 ] ::1 /
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0011s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010145s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.010214s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016963s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
 
-[ 2019-06-26T11:13:07+08:00 ] ::1 /Home/Login/index
+[ 2019-06-26T16:19:05+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0011s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009623s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009694s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020545s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002190s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001557s ]
 
-[ 2019-06-26T11:13:07+08:00 ] ::1 /index.php/Home/Login/verify.html
+[ 2019-06-26T16:19:27+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
-
-[ 2019-06-26T11:13:18+08:00 ] ::1 /index.php/Home/Login/verify.html?0.14213903693406582
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
-
-[ 2019-06-26T11:13:24+08:00 ] ::1 /index.php/Home/Login/login.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0221s ]
-NOTIC: [8] Undefined index: validate F:\phpStudy\WWW\tp3\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
-NOTIC: [8] Undefined index: auto F:\phpStudy\WWW\tp3\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
-SQL: SELECT * FROM `user` WHERE `name` = '测试猫' AND `pwd` = '123456abc'  [ RunTime:0.0010s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015736s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015840s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Array to string conversion F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028857s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001630s ]
 
-[ 2019-06-26T11:13:25+08:00 ] ::1 /index.php/Home/Show/index
+[ 2019-06-26T16:19:42+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009585s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009655s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015971s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
 
-[ 2019-06-26T11:13:26+08:00 ] ::1 /index.php/Home/Show/table.html
+[ 2019-06-26T16:21:46+08:00 ] ::1 /index.php/Home/Show/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
-SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002211s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002397s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002482s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002552s ]
+
+[ 2019-06-26T16:22:21+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002844s ]
+
+[ 2019-06-26T16:22:42+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001602s ]
+
+[ 2019-06-26T16:26:03+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002537s ]
+
+[ 2019-06-26T16:27:49+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001589s ]
+
+[ 2019-06-26T16:28:20+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002798s ]
+
+[ 2019-06-26T16:28:57+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2019-06-26T16:29:10+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2019-06-26T16:29:14+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002149s ]
+
+[ 2019-06-26T16:32:33+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+NOTIC: [8] Undefined variable: d F:\phpStudy\WWW\tp3\Apps\Home\Controller\ShowController.class.php 第 11 行.
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2019-06-26T16:33:23+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002806s ]
+
+[ 2019-06-26T16:33:33+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002215s ]
+
+[ 2019-06-26T16:34:24+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2019-06-26T16:34:51+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2019-06-26T16:35:29+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2019-06-26T16:35:43+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2019-06-26T16:36:17+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002159s ]
+
+[ 2019-06-26T16:36:31+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2019-06-26T16:43:55+08:00 ] ::1 /index.php/Home/Show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SELECT user.name,r.chinese,r.math,r.english,r.physical,r.chemical,r.biological,r.political,r.history,r.geographic FROM `user` INNER JOIN results r on user.uid=r.rid  WHERE ( user.name='测试猫' ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: table F:\phpStudy\WWW\tp3\Apps\Runtime\Cache\Home\bb8fd38dd8514bc112aa8f88c7ecf712.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001553s ]
 

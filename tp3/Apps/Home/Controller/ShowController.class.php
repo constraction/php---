@@ -6,6 +6,9 @@ class ShowController extends Controller {
     
     public function index()
     {
+        header("Content-type:text/html;charset=utf-8");
+        $show=new ShowModel();
+        $show->result();
         $this -> display('Apps\Home\View\Show\show.html');
     }
     public function session()
@@ -17,9 +20,7 @@ class ShowController extends Controller {
     }
     public function table()
     {
-        header("Content-type:text/html;charset=utf-8");
-        $show=new ShowModel();
-        $show->result();
+        
     }
     public function result()
     {

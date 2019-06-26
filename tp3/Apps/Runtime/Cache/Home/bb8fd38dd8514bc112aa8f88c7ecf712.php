@@ -45,9 +45,27 @@
 		<div class="form-w3-agile">
 			<h2 class="sub-agileits-w3layouts"><?php echo (session('name')); ?>的成绩单</h2>
 				<form method="post">
-					<!-- <iframe src="<?php echo U('Show/table');?>" frameborder="1" width="600px" height="170px" ></iframe> -->
-					<iframe src="<?php echo U('Show/table');?>" frameborder="0" marginwidth="0,0" width="600px" ></iframe>
-					
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>姓名</th>
+									<th>语文</th>
+									<th>数学</th>
+									<th>英语</th>
+									<th>物理</th>
+									<th>化学</th>
+									<th>生物</th>
+									<th>政治</th>
+									<th>历史</th>
+									<th>地理</th>
+								</tr>
+							</thead>
+							<tbody id="tab">
+								<!-- <?php echo ($table); ?> -->
+							</tbody>
+						</table>
+					</div>
 					<div class="submit-w3l">
 						<input type="submit" value="注销登录" formaction="<?php echo U('Show/result');?>">
 					</div>
@@ -61,6 +79,10 @@
 		<p> © 2019 Internship Sign In & Sign Up Form . All rights reserved | Design by xmoban.cn</p>
 	</div>
 	<!-- //copyright --> 
-	<script type="text/javascript" src="../../../../Public/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/Public/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		
+		$("#tab").append("");
+	</script>
 </body>
 </html>
