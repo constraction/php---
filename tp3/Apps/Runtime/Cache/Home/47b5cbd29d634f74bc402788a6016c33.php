@@ -1,4 +1,4 @@
-<html lang="en">
+<?php if (!defined('THINK_PATH')) exit();?><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=100%, initial-scale=1.0">
@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe src="{:U('Table/all')}" frameborder="0" marginwight="0,0" width="620px" height="620px"></iframe>
+    <iframe src="<?php echo U('Table/all');?>" frameborder="0" marginwight="0,0" width="620px" height="620px"></iframe>
 </body>
 </html>
