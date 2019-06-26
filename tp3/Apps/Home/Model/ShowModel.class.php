@@ -27,9 +27,7 @@ class ShowModel extends Model{
                     r.history,
                     r.geographic
                 ")
-            // ->fetchSql(sql)
             ->find();
-            // dump($rs);
         $data=array(
             '0'=>array($rs['name']),
             '1'=>array($rs['chinese']),
@@ -42,29 +40,12 @@ class ShowModel extends Model{
             '8'=>array($rs['history']),
             '9'=>array($rs['geographic'])
         );
-        // dump($data['0']);
-        echo "<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>";
-        
-            echo "<table>";
-                echo "<thead>";
-                        echo "<tr>";
-                                echo "<th>姓名</th>";
-                                echo "<th>语文</th>";
-                                echo "<th>数学</th>";
-                                echo "<th>英语</th>";
-                                echo "<th>历史</th>";
-                                echo "<th>地理</th>";
-                                // echo "<th>操作</th>";
-                            echo "</tr>";
-                echo "</thead>";
-                echo "<tbody>";
-                    echo "<tr>";
-                    for ($i=0; $i <=9 ; $i++) { 
-                        echo "<td>".$data[$i][0]."</td>";
-                    }
-                    echo "</tr>";
-                echo "</tbody>";
-            echo "</table>";
-        
+        echo "<link rel='stylesheet' href='../../../Public/css/TablePractice.css'>";
+        echo "<tr>";
+        for ($i=0; $i <=9 ; $i++) 
+        { 
+            echo "<td>".$data[$i][0]."</td>";
+        }
+        echo "</tr>";
     }
 }
