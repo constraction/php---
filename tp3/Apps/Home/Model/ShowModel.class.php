@@ -28,7 +28,6 @@ class ShowModel extends Model{
                     r.geographic
                 ")
             // ->fetchSql(sql)
-            ->find();
             // dump($rs);
         $data=array(
             '0'=>array($rs['name']),
