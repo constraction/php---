@@ -47,11 +47,21 @@ class ShowModel extends Model{
         
             echo "<table>";
                 echo "<thead>";
-        for ($i=0; $i <=9 ; $i++) 
-        { 
-            echo "<td>".$data[$i][0]."</td>";
-        }
-        echo "</tr>";
+                        echo "<tr>";
+                                echo "<th>姓名</th>";
+                                echo "<th>语文</th>";
+                                echo "<th>数学</th>";
+                                echo "<th>英语</th>";
+                                echo "<th>历史</th>";
+                                echo "<th>地理</th>";
+                                // echo "<th>操作</th>";
+                            echo "</tr>";
+                echo "</thead>";
+                echo "<tbody>";
+                    echo "<tr>";
+                    for ($i=0; $i <=9 ; $i++) { 
+                        echo "<td>".$data[$i][0]."</td>";
+                    }
                     echo "</tr>";
                 echo "</tbody>";
             echo "</table>";
