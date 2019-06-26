@@ -27,7 +27,9 @@ class ShowModel extends Model{
                     r.history,
                     r.geographic
                 ")
+            // ->fetchSql(sql)
             ->find();
+            // dump($rs);
         $data=array(
             '0'=>array($rs['name']),
             '1'=>array($rs['chinese']),
@@ -40,12 +42,19 @@ class ShowModel extends Model{
             '8'=>array($rs['history']),
             '9'=>array($rs['geographic'])
         );
-        echo "<link rel='stylesheet' href='../../../Public/css/TablePractice.css'>";
-        echo "<tr>";
+        // dump($data['0']);
+        echo "<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>";
+        
+            echo "<table>";
+                echo "<thead>";
         for ($i=0; $i <=9 ; $i++) 
         { 
             echo "<td>".$data[$i][0]."</td>";
         }
         echo "</tr>";
+                    echo "</tr>";
+                echo "</tbody>";
+            echo "</table>";
+        
     }
 }
