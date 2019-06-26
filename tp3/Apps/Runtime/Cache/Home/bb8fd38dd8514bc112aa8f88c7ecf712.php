@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>学生成绩记录系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,13 +43,13 @@
 <div class="main-agileits">
 <!--form-stars-here-->
 		<div class="form-w3-agile">
-			<h2 class="sub-agileits-w3layouts">{$Think.session.name}的成绩单</h2>
+			<h2 class="sub-agileits-w3layouts"><?php echo (session('name')); ?>的成绩单</h2>
 				<form method="post">
-					<!-- <iframe src="{:U('Show/table')}" frameborder="1" width="600px" height="170px" ></iframe> -->
-					<iframe src="{:U('Show/table')}" frameborder="0" marginwidth="0,0" width="600px" ></iframe>
+					<!-- <iframe src="<?php echo U('Show/table');?>" frameborder="1" width="600px" height="170px" ></iframe> -->
+					<iframe src="<?php echo U('Show/table');?>" frameborder="0" marginwidth="0,0" width="600px" ></iframe>
 					
 					<div class="submit-w3l">
-						<input type="submit" value="注销登录" formaction="{:U('Show/result')}">
+						<input type="submit" value="注销登录" formaction="<?php echo U('Show/result');?>">
 					</div>
 					<p class="p-bottom-w3ls">如果你没有账号来<a href="../Reg/index">这里注册一个</a></p>
 				</form>

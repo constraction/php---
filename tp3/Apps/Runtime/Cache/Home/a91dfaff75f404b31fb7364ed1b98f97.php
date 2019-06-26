@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -13,4 +13,4 @@
 			<!-- <a href="../Home/Show/index">欢迎</a><br> -->
 		</h1>
 	</body>
-</html>	
+</html>
