@@ -6,6 +6,5 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe src="<?php echo U('Table/all');?>" frameborder="0" marginwight="0,0" width="620px" height="620px"></iframe>
 </body>
 </html>
