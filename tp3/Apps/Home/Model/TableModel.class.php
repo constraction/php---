@@ -22,15 +22,17 @@ class TableModel extends Model
                     r.biological,
                     r.political,
                     r.history,
-                    r.geographic
+                    r.geographic,
+                    r.sum,
+                    r.average
                 ")
             ->select();
         $data=array();
         $data=array_keys($rs[0]);
         
         echo "<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>";
-        
-            echo "<table>";
+            $marginwight="0,0";
+            echo "<table style='marginwight=$marginwight'>";
                 echo "<thead>";
                         echo "<tr>";
                                 echo "<th>姓名</th>";
@@ -43,6 +45,8 @@ class TableModel extends Model
                                 echo "<th>政治</th>";
                                 echo "<th>历史</th>";
                                 echo "<th>地理</th>";
+                                echo "<th>总分</th>";
+                                echo "<th>平均分</th>";
                             echo "</tr>";
                 echo "</thead>";
                 echo "<tbody>";

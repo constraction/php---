@@ -38,7 +38,9 @@ class ShowModel extends Model{
             '6'=>array($rs['biological']),
             '7'=>array($rs['political']),
             '8'=>array($rs['history']),
-            '9'=>array($rs['geographic'])
+            '9'=>array($rs['geographic']),
+            '10'=>array($rs['sum']),
+            '11'=>array($rs['average'])
         );
         echo "<link rel='stylesheet' href='../../../Public/css/TablePractice.css'>";
         echo "<table>";
@@ -53,12 +55,14 @@ class ShowModel extends Model{
 					echo "<th>生物</th>";
 					echo "<th>政治</th>";
 					echo "<th>历史</th>";
-					echo "<th>地理</th>";
+                    echo "<th>地理</th>";
+                    echo "<th>总分</th>";
+                    echo "<th>平均分</th>";
 				echo "</tr>";
             echo "</thead>";
             echo "<tbody>";
                 echo "<tr>";
-                for ($i=0; $i <=9 ; $i++) 
+                for ($i=0; $i <count($rs) ; $i++) 
                 { 
                     echo "<td>".$data[$i][0]."</td>";
                 }
