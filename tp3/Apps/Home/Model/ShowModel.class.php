@@ -25,7 +25,9 @@ class ShowModel extends Model{
                     r.biological,
                     r.political,
                     r.history,
-                    r.geographic
+                    r.geographic,
+                    r.sum,
+                    r.average
                 ")
             ->find();
         $data=array(

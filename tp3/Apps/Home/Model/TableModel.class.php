@@ -30,9 +30,7 @@ class TableModel extends Model
         $data=array();
         $data=array_keys($rs[0]);
         
-        echo "<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>";
-            $marginwight="0,0";
-            echo "<table style='marginwight=$marginwight'>";
+            echo "<table marginwight='0,0'>";
                 echo "<thead>";
                         echo "<tr>";
                                 echo "<th>姓名</th>";
@@ -58,7 +56,6 @@ class TableModel extends Model
                         }
                         echo "</tr>";
                     }
-                   
                 echo "</tbody>";
             echo "</table>";
         

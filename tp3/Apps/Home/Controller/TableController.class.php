@@ -13,6 +13,8 @@ class TableController extends Controller
     }
     public function all()
     {
-        
+        header("Content-type:text/html;charset=utf-8");
+        $table=new TableModel();
+        $table->index();
     }
 }
