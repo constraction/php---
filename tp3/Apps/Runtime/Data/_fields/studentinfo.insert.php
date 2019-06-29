@@ -1,0 +1,1 @@
+a:8:{i:0;s:3:"sid";i:1;s:3:"sex";i:2;s:5:"grade";i:3;s:5:"class";i:4;s:5:"phone";i:5;s:4:"mail";s:3:"_pk";s:3:"sid";s:5:"_type";a:6:{s:3:"sid";s:7:"int(11)";s:3:"sex";s:12:"varchar(255)";s:5:"grade";s:12:"varchar(255)";s:5:"class";s:12:"varchar(255)";s:5:"phone";s:12:"varchar(255)";s:4:"mail";s:12:"varchar(255)";}}

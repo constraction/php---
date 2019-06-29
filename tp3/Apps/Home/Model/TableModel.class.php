@@ -6,7 +6,32 @@ class TableModel extends Model
     protected $tableName = 'results';
     public function index()
     {
+        header("Content-type:text/html;charset=utf-8");
+        
         $db=M('user'); //主表
+
+        $count=$db 
+            ->join("results r on user.uid=r.rid") //附表连主表
+            ->field
+                ("
+                    user.name,
+                    r.chinese,
+                    r.math,
+                    r.english,
+                    r.physical,
+                    r.chemical,
+                    r.biological,
+                    r.political,
+                    r.history,
+                    r.geographic,
+                    r.sum,
+                    r.average
+                ")
+            ->count();
+
+        $page = new \Think\Page($count,10);
+        $pages = $page->setConfig('head','个记录');
+        $show=$page->show();
 
         $rs=array();
         $rs=$db 
@@ -26,7 +51,9 @@ class TableModel extends Model
                     r.sum,
                     r.average
                 ")
+            ->limit($page->firstRow.','.$page->listRows)
             ->select();
+
         $data=array();
         $data=array_keys($rs[0]);
         
@@ -48,7 +75,6 @@ class TableModel extends Model
                             echo "</tr>";
                 echo "</thead>";
                 echo "<tbody>";
-                    
                     for ($j=0; $j <=count($rs)-1  ; $j++) { 
                         echo "<tr>";
                         for ($i=0; $i <=count($rs[$j])-1 ; $i++) { 
@@ -58,6 +84,7 @@ class TableModel extends Model
                     }
                 echo "</tbody>";
             echo "</table>";
-        
+            echo $show;
+            
     }
 }
