@@ -1,6 +1,7 @@
 <?php
 namespace Home\Model;
 use Think\Model;
+use Think\Controller;
 class InformModel extends Model 
 {
     protected $tableName='student';
@@ -9,24 +10,6 @@ class InformModel extends Model
         header("Content-type:text/html;charset=utf-8");
         
         $db=M('user'); //主表
-
-        $count=$db 
-            ->join("student s on user.uid=s.sid") //附表连主表
-            ->field
-                ("
-                    user.name,
-                    s.sex,
-                    s.grade,
-                    s.class,
-                    s.phone,
-                    s.mail
-                ")
-            ->count();
-
-        $page = new \Think\Page($count,10);
-        $pages = $page->setConfig('head','个记录');
-        $show=$page->show();
-
         $rs=array();
         $rs=$db 
         ->join("student s on user.uid=s.sid") //附表连主表
@@ -39,7 +22,6 @@ class InformModel extends Model
                 s.phone,
                 s.mail
             ")
-            ->limit($page->firstRow.','.$page->listRows)
             ->select();
 
         $data=array();
@@ -66,6 +48,9 @@ class InformModel extends Model
                     }
                 echo "</tbody>";
             echo "</table>";
-            echo $show;
+    }
+    public function insert()
+    {
+        
     }
 }
