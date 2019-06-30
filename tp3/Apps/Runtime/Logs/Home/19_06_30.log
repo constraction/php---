@@ -1,0 +1,12 @@
+[ 2019-06-30T12:44:59+08:00 ] ::1 /index.php/Home/Inform/insert_insert.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+NOTIC: [8] Use of undefined constant HAS_ONE - assumed 'HAS_ONE' F:\phpStudy\WWW\tp3\Apps\Home\Controller\InformController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0130s ]
+ERR: Think\Model:relation方法不存在！
+
