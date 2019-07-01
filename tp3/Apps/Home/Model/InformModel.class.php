@@ -2,17 +2,10 @@
 namespace Home\Model;
 use Think\Model;
 use Think\Controller;
-use Think\Model\RelationModel;
-class InformModel extends RelationModel 
+class InformModel extends Model 
 {
     protected $tableName='student';
 
-    protected $_link = array(
-        'User' => array(
-            'mapping_type'=>HAS_ONE,
-            'foreign_key '=>'name'
-        )
-    );
     public function index()
     {
         header("Content-type:text/html;charset=utf-8");
@@ -73,23 +66,55 @@ class InformModel extends RelationModel
         $data['class']=$class;
         $data['phone']=$phone;
         $data['mail']=$mail;
-        $data['Login']=$name;
+        
         $where=array(
             'user.name'=>$name
         );
-        $rs=D('student') 
-            ->join("user on user.uid=student.sid") //附表连主表
-            ->relation(true)
+        $uid=M('user')->where($where)->field('uid')->find();
+
+        $sid=$uid['uid'];
+        $rs=M('student') 
+            ->where('sid='.$sid)
             // ->fetchSql(true)
             ->save($data);
         // dump($rs);
         
         if ($rs) {
-            echo "修改成功";
+            echo "修改成功<h3><a href='./index'>点击这里跳转</a></h3>";
             // $this->success('修改成功', '../Inform/index', 1);
         } else {
             echo "修改失败";
             // $this->error('修改失败');
         } 
+    }
+    public function grade()
+    {
+        header("Content-type:text/html;charset=utf-8");
+
+        $chinese =   I("chinese");
+        $math               =   I("math"); 
+        $english           =   I("english"); 
+        $physical       =   I("physical"); 
+        $chemical       =   I("chemical"); 
+        $biological     =   I("biological"); 
+        $political      =  I("political"); 
+        $history         =  I("history"); 
+        $geographic    =   I("geographic");  
+
+        $sum = $chinese+$math+$english+$physical+$chemical+$biological+$political+$history+$geographic;
+        $average = $sum / 9;
+        $data = array(
+            'chinese'           =>  $chinese,
+            'math'               =>  $math ,
+            'english'           =>   $english,
+            'physical'         =>  $physical,
+            'chemical'        =>  $chemical,
+            'biological'      =>  $biological,
+            'political'         =>  $political,
+            'history'           => $history,
+            'geographic'    =>  $geographic,
+            'sum'               =>  $sum,
+            'average'          =>  $average
+        );
     }
 }

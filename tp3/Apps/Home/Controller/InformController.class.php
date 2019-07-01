@@ -21,4 +21,13 @@ class InformController extends Controller
         $inform=new InformModel();
         $inform->insert();
     }
+    public function grade_index()
+    {
+        $this->display('Apps\Home\View\Inform\grade.html');
+    }
+    public function grade_insert()
+    {
+        $grade=new InformModel();
+        $grade->grade();
+    }
 }
