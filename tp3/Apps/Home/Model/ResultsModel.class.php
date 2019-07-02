@@ -1,6 +1,10 @@
 <?php
 namespace Home\Model;
 use Think\Model;
+/**
+ * results 模型 
+ * 操作 results 表
+ */
 class ResultsModel extends Model 
 {
     /**

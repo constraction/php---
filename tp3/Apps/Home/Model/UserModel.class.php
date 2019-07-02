@@ -1,6 +1,10 @@
 <?php
 namespace Home\Model;
 use Think\Model;
+/**
+ * user 模型 
+ * 操作 user 表
+ */
 class UserModel extends Model 
 {
      /**
