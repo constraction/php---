@@ -9,9 +9,13 @@ class TableController extends Controller
      */
     public function index()
     {
+        
+        $this->display('Apps\Home\View\Table\table.html');
+    }
+    public function table()
+    {
         header("Content-type:text/html;charset=utf-8");
         $table=D('Results');
         $table->all();
-        $this->display('Apps\Home\View\Table\table.html');
     }
 }

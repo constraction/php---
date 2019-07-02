@@ -1,44 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
 <head>
 <title>学生成绩记录系统</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
-<script type="application/x-javascript">
-	addEventListener("load", function() 
-	 	{ 
-			setTimeout(hideURLbar, 0); 
-		}, false); 
-	function hideURLbar()
-	{ 
-		window.scrollTo(0,1); 
-	}
- </script>
-<!-- Custom Theme files -->
-<link href="/Public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-<link href="/Public/css/snow.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>
-<!-- //Custom Theme files -->
-<!-- web font -->
-<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-<!-- //web font -->
+<script type="text/javascript" src="/Public/js/metaer.js"></script>
+<script type="text/javascript" src="/Public/js/linker.js"></script>
 </head>
 <body>
-<div class="snow-container">
-			  <div class="snow foreground"></div>
-			  <div class="snow foreground layered"></div>
-			  <div class="snow middleground"></div>
-			  <div class="snow middleground layered"></div>
-			  <div class="snow background"></div>
-			  <div class="snow background layered"></div>
-			</div>
-
-<div class="top-buttons-agileinfo">
-<!-- <a href="../Login/index"  class="active">登录</a><a href="../Reg/index">注册</a> -->
-</div>
+<script type="text/javascript" src="/Public/js/header.js"></script>
 <h1>学生成绩记录系统</h1>
 <div class="main-agileits">
 <!--form-stars-here-->
@@ -59,10 +27,6 @@
 		</div>
 <!--//form-ends-here-->
 <!-- copyright -->
-	<div class="copyright w3-agile">
-		<p> © 2019 Internship Sign In & Sign Up Form . All rights reserved | Design by xmoban.cn</p>
-	</div>
-	<!-- //copyright --> 
-	<script type="text/javascript" src="/Public/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/Public/js/footer.js"></script>
 </body>
 </html>

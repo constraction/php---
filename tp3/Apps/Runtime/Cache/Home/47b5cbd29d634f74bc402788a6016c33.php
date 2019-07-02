@@ -9,9 +9,6 @@
 <body>
     <div class="do">
         <form>
-            <!-- <input type="submit" value="求和" formaction="<?php echo U('Table/sum');?>">
-            <input type="submit" value="求平均数" formaction="<?php echo U('Table/ave');?>">
-            <input type="submit" value="排序" formaction="<?php echo U('Table/sort');?>"> -->
         </form>
     </div>
 </body>
