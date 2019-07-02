@@ -1,12 +1,14 @@
 <?php
 namespace Home\Model;
 use Think\Model;
-use Think\Controller;
-class InformModel extends Model 
+class StudentModel extends Model 
 {
+     /**
+      * 重新定义表
+      */
     protected $tableName='student';
 
-    /**
+     /**
      * 显示学生的个人信息
      */
     public function index()
@@ -54,7 +56,7 @@ class InformModel extends Model
             echo "</table>";
     }
 
-    /**
+     /**
      * 学生修改自己的个人信息
      */
     public function insert()
@@ -93,60 +95,5 @@ class InformModel extends Model
             echo "修改失败";
             // $this->error('修改失败');
         } 
-    }
-
-    /**
-     * 如果学生发现没有自己的成绩信息，
-     * 则可以自行添加
-     */
-    public function grade()
-    {
-        header("Content-type:text/html;charset=utf-8");
-
-        $chinese =   I("chinese");
-        $math               =   I("math"); 
-        $english           =   I("english"); 
-        $physical       =   I("physical"); 
-        $chemical       =   I("chemical"); 
-        $biological     =   I("biological"); 
-        $political      =  I("political"); 
-        $history         =  I("history"); 
-        $geographic    =   I("geographic");
-
-        $sum = $chinese+$math+$english+$physical+$chemical+$biological+$political+$history+$geographic;
-        $average = $sum / 9;
-
-        $data = array(
-            'chinese'           =>  $chinese,
-            'math'               =>  $math ,
-            'english'           =>   $english,
-            'physical'         =>  $physical,
-            'chemical'        =>  $chemical,
-            'biological'      =>  $biological,
-            'political'         =>  $political,
-            'history'           => $history,
-            'geographic'    =>  $geographic,
-            'sum'               =>  $sum,
-            'average'          =>  $average
-        );
-
-        $where=array(
-            'user.name'=>session('name')
-        );
-        $uid=M('user')->where($where)->field('uid')->find();
-        $rid=$uid['uid'];
-
-        $ins=M('results')
-                ->where('rid='.$rid)
-                ->add($data);
-        
-        if ($ins) 
-        {
-            echo "添加成功<h3><a href='../Show/index'>点击这里跳转</a></h3>";
-        }
-        else 
-        {
-            echo "添加失败";
-        }
     }
 }

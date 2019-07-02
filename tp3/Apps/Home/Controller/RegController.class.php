@@ -1,11 +1,19 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-use Home\Model\RegModel;
+use Home\Model\UserModel;
 class RegController extends Controller {
+
+    /**
+     * 显示注册页
+     */
     public function index(){
         $this->display('Apps\Home\View\Reg\signup.html');
     }
+
+    /**
+     * 注册操作
+     */
     public function signup(){ 
         header("Content-type:text/html;charset=utf-8");
 
@@ -15,7 +23,7 @@ class RegController extends Controller {
         $data['pwd']=$pwd;
         $data['status']='1';
         # 实例化User对象
-        $user = new RegModel();
+        $user =D('User');
         // $users=new RegModel();
         // $users->$_validate;
         # 通过create()调用对应的模型进行自动验证 创建数据集

@@ -17,25 +17,7 @@
             政    治：<input type="text" name="political"><br>
             历    史：<input type="text" name="history"><br>
             地    理：<input type="text" name="geographic"><br>
-            <div class="sum">
-                    总    分：
-                    <input type="text" name="sum" placeholder="点我获取总分">
-                    <input type="button" value="获取总分" readonly="readonly">
-                    <br>
-            </div>
-            <div class="aver">
-                    平均分：<input type="text" name="average" placeholder="点我获取平均分"><br>
-            </div>
             <input type="submit" value="添加信息" formaction="<?php echo U('Inform/grade_insert');?>">
     </form>
 </body>
-<script src="/Public/js/jquery-3.4.1.js"></script>
-<script>
-    $(function () { 
-        var sum = $(':chinese').val()+$(':math').val()+$(':english').val()+$(':physical').val()+$(':chemical').val()+$(':biological').val()+$(':political').val()+$(':history').val()+$(':geographic').val()
-        $('.sum').click(function () { 
-            $(':sum').val(sum);
-        });
-     });
-</script>
 </html>

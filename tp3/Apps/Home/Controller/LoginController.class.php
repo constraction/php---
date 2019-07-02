@@ -1,14 +1,22 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-use Home\Model\LoginModel;
+use Home\Model\UserModel;
 class LoginController extends Controller {
+   
+    /**
+     * 显示登录页
+     */
     public function index(){
         header("Content-type:text/html;charset=utf-8");
         // $v=new LoginModel();
         // $v->ver();
         $this->display('Apps\Home\View\Login\login.html');
     }
+
+    /**
+     * 设置验证码
+     */
     public function verify()
     {
         ob_clean();
@@ -17,11 +25,17 @@ class LoginController extends Controller {
         $Verify->entry(1);
         
     }
+
+
     public function check()
     {
         header("Content-type: text/html; charset=utf-8");
         
     }
+
+    /**
+     * 登录操作
+     */
     public function login(){
 
         header("Content-type:text/html;charset=utf-8");
@@ -31,7 +45,7 @@ class LoginController extends Controller {
         # 判断提交方式
         if (IS_POST) {
             # 实例化Login对象
-            $login = new LoginModel();
+            $login = D('User');
             # 通过create()调用对应的模型进行自动验证 创建数据集
             # $data = 获取用户输入的信息
             $data = $login->create();
