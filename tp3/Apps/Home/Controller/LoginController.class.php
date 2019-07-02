@@ -9,8 +9,6 @@ class LoginController extends Controller {
      */
     public function index(){
         header("Content-type:text/html;charset=utf-8");
-        // $v=new LoginModel();
-        // $v->ver();
         $this->display('Apps\Home\View\Login\login.html');
     }
 
@@ -23,13 +21,6 @@ class LoginController extends Controller {
         $Verify = new \Think\Verify();
         $Verify->codeSet='1345680';
         $Verify->entry(1);
-        
-    }
-
-
-    public function check()
-    {
-        header("Content-type: text/html; charset=utf-8");
         
     }
 

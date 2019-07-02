@@ -30,7 +30,7 @@ class ShowController extends Controller {
     public function table()
     {
         header("Content-type:text/html;charset=utf-8");
-        $show=D('Result');
+        $show=D('Results');
         $show->myself();
     }
 

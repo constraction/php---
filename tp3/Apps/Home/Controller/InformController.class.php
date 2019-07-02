@@ -33,7 +33,7 @@ class InformController extends Controller
     }
 
     /**
-     * 显示修改个人成绩的页面
+     * 显示新增个人成绩的页面
      */
     public function grade_index()
     {

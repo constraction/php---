@@ -1,6 +1,7 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-<title>学生成绩记录系统</title>
+<title>Internship Sign In & Sign Up Form a Responsive Widget Template :: xmoban.cn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
@@ -18,7 +19,6 @@
 <link href="/Public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/Public/css/snow.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel='stylesheet' href='../../../../Public/css/TablePractice.css'>
 <!-- //Custom Theme files -->
 <!-- web font -->
 <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -37,32 +37,41 @@
 			</div>
 
 <div class="top-buttons-agileinfo">
-<!-- <a href="../Login/index"  class="active">登录</a><a href="../Reg/index">注册</a> -->
+<a href="../Login/index"  class="active">登录</a><a href="../Reg/index">注册</a>
 </div>
 <h1>学生成绩记录系统</h1>
 <div class="main-agileits">
 <!--form-stars-here-->
 		<div class="form-w3-agile">
-			<h2 class="sub-agileits-w3layouts">{$Think.session.name}的成绩单</h2>
-				<form method="post">
-					<div>
-						<iframe src="{:U('Show/table')}" frameborder="1" marginwight="0,0" width="620px"></iframe>
-					</div>
-					<div class="submit-w3l">
-						<input type="submit" value="注销登录" formaction="{:U('Show/result')}">
-					</div>
-					<p class="p-bottom-w3ls"><a href="../Inform/insert_index">修改个人信息</a></p>
-					<p class="p-bottom-w3ls"><a href="../Inform/index">查看个人信息</a></p>
-					<p class="p-bottom-w3ls">如果没有成绩，请<a href="../Inform/grade_index">添加成绩信息</a></p>
-				</form>
+			<h2 class="sub-agileits-w3layouts">登录</h2>
+			<form action="<?php echo U('Login/login');?>" method="post">
+					<input type="text" name="Username" placeholder="用户名" required="" />
+					<input type="password" name="Password" placeholder="密码" required="" />
+					<input type="text" name="code" id="code" placeholder="验证码" required=""> 
+					<img src="<?php echo U('Login/verify');?>" alt="验证码"  title="看不清？换一张！" onclick="this.src='<?php echo U("Login/verify");?>?' +Math.random() "><img>
+					<a href="<?php echo U('Forgot/index');?>" class="forgot-w3layouts">忘记密码 ？</a>
+				<div class="submit-w3l">
+					<input type="submit" value="登录">
+				</div>
+				<p class="p-bottom-w3ls">如果你没有账号来<a href="../Reg/index">这里注册一个</a></p>
+			</form>
 		</div>
 		</div>
 <!--//form-ends-here-->
 <!-- copyright -->
 	<div class="copyright w3-agile">
-		<p> © 2019 Internship Sign In & Sign Up Form . All rights reserved | Design by xmoban.cn</p>
+		<p> © 2019 Internship Sign In & Sign Up Form . All rights reserved | Design by <a href="http://www.xmoban.cn/" target="_blank">xmoban.cn</a></p>
 	</div>
 	<!-- //copyright --> 
-	<script type="text/javascript" src="/Public/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../../../../Public/js/jquery-2.1.4.min.js"></script>
+	<script>
+// 		$(function()
+// 		{
+//           $('img').click(function()
+// 		  {
+//                $('img').attr('src',"/index.php/Home/Login/verify/random/"+Math.random());//点击事件改变图片地址
+//            });
+//         });
+	</script>
 </body>
 </html>

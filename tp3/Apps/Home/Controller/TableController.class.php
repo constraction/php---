@@ -10,7 +10,7 @@ class TableController extends Controller
     public function index()
     {
         header("Content-type:text/html;charset=utf-8");
-        $table=D('Result');
+        $table=D('Results');
         $table->all();
         $this->display('Apps\Home\View\Table\table.html');
     }

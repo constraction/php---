@@ -145,6 +145,12 @@ class ResultsModel extends Model
     {
         header("Content-type:text/html;charset=utf-8");
 
+        $where=array(
+            'user.name'=>session('name')
+        );
+        $uid=M('user')->where($where)->field('uid')->find();
+        
+        $rid=$uid['uid'];
         $chinese =   I("chinese");
         $math               =   I("math"); 
         $english           =   I("english"); 
@@ -159,6 +165,7 @@ class ResultsModel extends Model
         $average = $sum / 9;
 
         $data = array(
+            'rid'                   => $rid,
             'chinese'           =>  $chinese,
             'math'               =>  $math ,
             'english'           =>   $english,
@@ -169,14 +176,8 @@ class ResultsModel extends Model
             'history'           => $history,
             'geographic'    =>  $geographic,
             'sum'               =>  $sum,
-            'average'          =>  $average
+            'average'          =>  sprintf("%.2f", $average)
         );
-
-        $where=array(
-            'user.name'=>session('name')
-        );
-        $uid=M('user')->where($where)->field('uid')->find();
-        $rid=$uid['uid'];
 
         $ins=M('results')
                 ->where('rid='.$rid)
