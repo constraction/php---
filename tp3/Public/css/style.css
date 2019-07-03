@@ -39,7 +39,7 @@ body {
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
-    background: url(../img/banner.jpg)no-repeat 0px 0px;
+	background: url(/Public/img/banner.1.png)no-repeat 0px 0px;
 	text-align: center;
 }
 h1,h2,h3,h4,h5,h6{
@@ -51,6 +51,20 @@ h1,h2,h3,h4,h5,h6{
     text-align: right;
     padding: 2em 3em;
 }
+
+.top-heads-box {
+    /* float: right; */
+    text-align: right;
+	padding: 2em 3em;
+	height: 44px;
+	
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+}
+
 .main-agileits {
     width: 42%;
     margin: 0 auto;
@@ -86,6 +100,36 @@ h2.sub-agileits-w3layouts,h3.sub-agileits-w3layouts {
     -ms-transition: 0.3s all;
     transition: 0.3s all;
     border: 1px solid #fff;
+}
+.top-heads-box a{
+	/* background: rgba(255, 255, 255, 0.15); */
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 9px 26px;
+    /* border: 1px solid #756d6d; */
+    margin: 15px 15px 0px 0px;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    transition: 0.3s all;
+	/* border: 1px solid #fff; */
+	
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 45px;
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+.top-heads-box img{
+	border-radius: 50%;
+	overflow: hidden;
 }
 .top-buttons-agileinfo a.active {
     border-color: #df5799;

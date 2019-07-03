@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>学生成绩记录系统</title>
+<script type="application/x-javascript">addEventListener("load", function(){ setTimeout(hideURLbar, 0);}, false);function hideURLbar(){ window.scrollTo(0,1); }</script>
 <script type="text/javascript" src="/Public/js/metaer.js"></script>
 <script type="text/javascript" src="/Public/js/linker.js"></script>
 </head>
@@ -28,4 +29,18 @@
 <!--//form-ends-here-->
 <script type="text/javascript" src="/Public/js/footer.js"></script>
 </body>
+<script type="text/javascript">
+	$(function(){
+		var session="<?php echo (session('name')); ?>";
+		if (session) {
+			$('.top-buttons-agileinfo').hide();
+			$('.top-heads-box').show();
+			var htmlstring="<a href=' class='head'><img src='/Public/img/banner.jpg' alt='头像' width='45px' height='45px' class='head'></a>";
+			$('.top-heads-box').html(htmlstring);
+		} else {
+			$('.top-buttons-agileinfo').show();
+			$('.top-heads-box').hide();
+		}
+	});
+</script>
 </html>

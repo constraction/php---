@@ -1,5 +1,4 @@
 document.writeln(`
-<script type="application/x-javascript">addEventListener("load", function(){ setTimeout(hideURLbar, 0);}, false);function hideURLbar(){ window.scrollTo(0,1); }</script>
 <!-- Custom Theme files -->
 <link href="/Public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/Public/css/snow.css" rel="stylesheet" type="text/css" media="all" />

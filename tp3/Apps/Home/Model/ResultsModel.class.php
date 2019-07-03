@@ -29,12 +29,8 @@ class ResultsModel extends Model
                     r.chinese,
                     r.math,
                     r.english,
-                    r.physical,
-                    r.chemical,
-                    r.biological,
-                    r.political,
-                    r.history,
-                    r.geographic,
+                    r.writing,
+                    r.science,
                     r.sum,
                     r.average
                 ")
@@ -50,12 +46,8 @@ class ResultsModel extends Model
                                 echo "<th>语文</th>";
                                 echo "<th>数学</th>";
                                 echo "<th>英语</th>";
-                                echo "<th>物理</th>";
-                                echo "<th>化学</th>";
-                                echo "<th>生物</th>";
-                                echo "<th>政治</th>";
-                                echo "<th>历史</th>";
-                                echo "<th>地理</th>";
+                                echo "<th>文综</th>";
+                                echo "<th>理综</th>";
                                 echo "<th>总分</th>";
                                 echo "<th>平均分</th>";
                             echo "</tr>";
@@ -89,12 +81,8 @@ class ResultsModel extends Model
                     r.chinese,
                     r.math,
                     r.english,
-                    r.physical,
-                    r.chemical,
-                    r.biological,
-                    r.political,
-                    r.history,
-                    r.geographic,
+                    r.writing,
+                    r.science,
                     r.sum,
                     r.average
                 ")
@@ -104,31 +92,23 @@ class ResultsModel extends Model
             '1'=>array($rs['chinese']),
             '2'=>array($rs['math']),
             '3'=>array($rs['english']),
-            '4'=>array($rs['physical']),
-            '5'=>array($rs['chemical']),
-            '6'=>array($rs['biological']),
-            '7'=>array($rs['political']),
-            '8'=>array($rs['history']),
-            '9'=>array($rs['geographic']),
-            '10'=>array($rs['sum']),
-            '11'=>array($rs['average'])
+            '4'=>array($rs['writing']),
+            '5'=>array($rs['science']),
+            '6'=>array($rs['sum']),
+            '7'=>array($rs['average'])
         );
         echo "<link rel='stylesheet' href='../../../Public/css/TablePractice.css'>";
         echo "<table>";
 		    echo "<thead>";
 				echo "<tr>";
-					echo "<th>姓名</th>";
-					echo "<th>语文</th>";
-					echo "<th>数学</th>";
-					echo "<th>英语</th>";
-					echo "<th>物理</th>";
-					echo "<th>化学</th>";
-					echo "<th>生物</th>";
-					echo "<th>政治</th>";
-					echo "<th>历史</th>";
-                    echo "<th>地理</th>";
-                    echo "<th>总分</th>";
-                    echo "<th>平均分</th>";
+                echo "<th>姓名</th>";
+                echo "<th>语文</th>";
+                echo "<th>数学</th>";
+                echo "<th>英语</th>";
+                echo "<th>文综</th>";
+                echo "<th>理综</th>";
+                echo "<th>总分</th>";
+                echo "<th>平均分</th>";
 				echo "</tr>";
             echo "</thead>";
             echo "<tbody>";
@@ -158,27 +138,19 @@ class ResultsModel extends Model
         $chinese =   I("chinese");
         $math               =   I("math"); 
         $english           =   I("english"); 
-        $physical       =   I("physical"); 
-        $chemical       =   I("chemical"); 
-        $biological     =   I("biological"); 
-        $political      =  I("political"); 
-        $history         =  I("history"); 
-        $geographic    =   I("geographic");
+        $writing       =   I("writing"); 
+        $science       =   I("science");
 
-        $sum = $chinese+$math+$english+$physical+$chemical+$biological+$political+$history+$geographic;
-        $average = $sum / 9;
+        $sum = $chinese+$math+$english+$writing+$science;
+        $average = $sum / 5;
 
         $data = array(
             'rid'                   => $rid,
             'chinese'           =>  $chinese,
             'math'               =>  $math ,
             'english'           =>   $english,
-            'physical'         =>  $physical,
-            'chemical'        =>  $chemical,
-            'biological'      =>  $biological,
-            'political'         =>  $political,
-            'history'           => $history,
-            'geographic'    =>  $geographic,
+            'writing'         =>  $writing,
+            'science'        =>  $science,
             'sum'               =>  $sum,
             'average'          =>  sprintf("%.2f", $average)
         );

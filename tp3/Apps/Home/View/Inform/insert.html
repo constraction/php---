@@ -1,28 +1,8 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <form method="POST">
-        姓名：<input type="text" name="name" value="{$Think.session.name}"><br>
-        性别：<input type="text" name="sex"> <br>
-        年级：<input type="text" name="grade"><br>
-        班级：<input type="text" name="class"><br>
-        电话：<input type="tel" name="phone"><br>
-        邮箱：<input type="email" name="mail"><br>
-        <input type="submit" value="修改" formaction="{:U('Inform/insert_insert')}">
-    </form>
-    <a href="../Show/index">返回成绩单</a>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
 <title>学生成绩记录系统</title>
+<script type="application/x-javascript">addEventListener("load", function(){ setTimeout(hideURLbar, 0);}, false);function hideURLbar(){ window.scrollTo(0,1); }</script>
 <script type="text/javascript" src="/Public/js/metaer.js"></script>
 <script type="text/javascript" src="/Public/js/linker.js"></script>
 </head>
@@ -42,7 +22,7 @@
                 <input type="email" name="mail" placeholder="邮箱" required=""><br>
 					<!-- <a href="{:U('Forgot/index')}" class="forgot-w3layouts">忘记密码 ？</a> -->
 				<div class="submit-w3l">
-					<input type="submit" value="修改" formaction="{:U('Inform/insert_insert')}">
+					<input type="submit" value="修改" formaction="{:U('Inform/updata')}">
 				</div>
 				<p class="p-bottom-w3ls">点击这里返回<a href="../Show/index">成绩单</a></p>
 			</form>
@@ -52,4 +32,18 @@
 <!-- copyright -->
 <script type="text/javascript" src="/Public/js/footer.js"></script>
 </body>
+<script type="text/javascript">
+	$(function(){
+		var session="{$Think.session.name}";
+		if (session) {
+			$('.top-buttons-agileinfo').hide();
+			$('.top-heads-box').show();
+			var htmlstring="<a href=' class='head'><img src='/Public/img/banner.jpg' alt='头像' width='45px' height='45px' class='head'></a>";
+			$('.top-heads-box').html(htmlstring);
+		} else {
+			$('.top-buttons-agileinfo').show();
+			$('.top-heads-box').hide();
+		}
+	});
+</script>
 </html>
