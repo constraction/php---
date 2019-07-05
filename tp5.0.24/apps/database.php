@@ -12,16 +12,18 @@
 return [
     // 数据库类型
     'type'            => 'mysql',
+    // 开启断线重连
+    'break_reconnect' => true,
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => 'localhost',
     // 数据库名
-    'database'        => '',
+    'database'        => 'vipinfo',
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => '',
+    'password'        => '0000',
     // 端口
-    'hostport'        => '',
+    'hostport'        => '3306',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
