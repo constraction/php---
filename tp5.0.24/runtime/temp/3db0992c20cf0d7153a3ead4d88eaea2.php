@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\sign\in.html";i:1562465852;}*/ ?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -24,7 +25,7 @@
 	      <div class='icon'>
 	        <img alt="" src="/static/img/user_icon_copy.png">
 	      </div>
-	      <input name="login" placeholder='用户名' maxlength="16" type='text' autocomplete="off" value="{$Think.session.name}"/>
+	      <input name="login" placeholder='用户名' maxlength="16" type='text' autocomplete="off" value="<?php echo \think\Session::get('name'); ?>"/>
 	        <div class='validation'>
 	          <img alt="" src="/static/img/tick.png">
 	        </div>
@@ -81,8 +82,8 @@
 		var ajaxmockjax = 1;//是否启用虚拟Ajax的请求响 0 不启用  1 启用
 		//默认账号密码
 		
-		var truelogin = "{$Think.cookie.name}";
-		var truepwd = "{$Think.cookie.pwd}";
+		var truelogin = "<?php echo \think\Cookie::get('name'); ?>";
+		var truepwd = "<?php echo \think\Cookie::get('pwd'); ?>";
 		
 		var CodeVal = 0;
 	    Code();
@@ -215,7 +216,7 @@
 	                                            $('.success').fadeIn(1000);
 	                                            $('.success').html(data.Text);
 												//跳转操作
-												window.location.href = "{:url('Welcome/index')}";
+												window.location.href = "<?php echo url('Welcome/index'); ?>";
 	                                        } else {
 	                                            AjaxErro(data);
 	                                        }
