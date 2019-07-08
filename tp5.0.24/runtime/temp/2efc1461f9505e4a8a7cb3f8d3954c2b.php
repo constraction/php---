@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\shopcar\shopCar.html";i:1562568744;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,15 +13,15 @@
 
 <!-- start banner_x -->
 		<div class="banner_x center">
-			<a href="{:url('Index/index')}" target="_blank"><div class="logo fl"></div></a>
+			<a href="<?php echo url('Index/index'); ?>" target="_blank"><div class="logo fl"></div></a>
 			
 			<div class="wdgwc fl ml40">我的购物车</div>
 			<div class="wxts fl ml20">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</div>
 			<div class="dlzc fr">
 				<ul>
-					<li><a href="{:url('Login/index')}" target="_blank">登录</a></li>
+					<li><a href="<?php echo url('Login/index'); ?>" target="_blank">登录</a></li>
 					<li>|</li>
-					<li><a href="{:url('Reg/index')}" target="_blank">注册</a></li>	
+					<li><a href="<?php echo url('Reg/index'); ?>" target="_blank">注册</a></li>	
 				</ul>
 				
 			</div>
@@ -72,7 +73,7 @@
 			<div class="jiesuandan mt20 center">
 				<div class="tishi fl ml20">
 					<ul>
-						<li><a href="{:url('Lists/index')}">继续购物</a></li>
+						<li><a href="<?php echo url('Lists/index'); ?>">继续购物</a></li>
 						<li>|</li>
 						<li>共<span>2</span>件商品，已选择<span>1</span>件</li>
 						<div class="clear"></div>
@@ -92,6 +93,11 @@
 
 	
 	<!-- footer -->
-	{include file="public/foot"}
+	<footer class="mt20 center">			
+	<div class="mt20">小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
+	<div>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</div> 
+	<div>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
+</footer>
+
 	</body>
 </html>
