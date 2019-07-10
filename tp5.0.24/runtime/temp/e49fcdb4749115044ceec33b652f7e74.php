@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\index\index.html";i:1562571437;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562571326;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\index\index.html";i:1562662727;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562744318;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,14 +38,29 @@
 	    <div class="right fr">
 	    	<div class="gouwuche fr"><a href="<?php echo url('Shopcar/index'); ?>">购物车</a></div>
 	    	<div class="fr">
-	    		<ul>
+	    		<ul class="fr_ul">
 	    			<li><a href="<?php echo url('Login/index'); ?>" target="_blank">登录</a></li>
 	    			<li>|</li>
 	    			<li><a href="<?php echo url('Reg/index'); ?>" target="_blank" >注册</a></li>
-	    			<li>|</li>
-	    			<li><a href="">消息通知</a></li>
-	    		</ul>
-	    	</div>
+				</ul>
+				<div class="headimg">
+						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="/static/index/img/ghs.png" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
+						<script src="/static/index/js/jquery.js"></script>
+						<script>
+							$(function()
+							{
+								var session="<?php echo \think\Session::get('name'); ?>";
+								if (session) {
+									$('.fr_ul').hide();
+									$('.headimg').show();
+								} else {
+									$('.fr_ul').show();
+									$('.headimg').hide();
+								}
+							});
+						</script>
+				</div>
+			</div>
 	    	<div class="clear"></div>
 	    </div>
 		<div class="clear"></div>

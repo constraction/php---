@@ -1,17 +1,25 @@
 <?php
 namespace app\index\controller;
+use index\model\User;
 
 class Login extends \think\Controller
 {
+    /**
+     * 登录页主页
+     */
     public function index()
     {
         return $this->fetch('login');
     }
     
+    /**
+     * 登录操作
+     * 验证码验证
+     */
     public function login()
     {
-        $login=model('User');
-        $login->index();
+        // $login=model('User');
+        // $login->index();
 
         $name=input('post.username');
         $pwd=input('post.password');
@@ -35,6 +43,7 @@ class Login extends \think\Controller
             {
                 if ($db) 
                 {
+                    session('name',$db['username']);
                     return $this->success('登录成功','Index/index');   
                 }else 
                 {
