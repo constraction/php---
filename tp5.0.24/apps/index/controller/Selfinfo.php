@@ -1,5 +1,7 @@
 <?php
 namespace app\index\controller;
+use think\Request;
+use think\db;
 
 class Selfinfo extends \think\Controller
 {
@@ -7,26 +9,58 @@ class Selfinfo extends \think\Controller
     {
         return $this->fetch('self_info');
     }
+
+    /**
+     * 上传头像
+     */
     public function upload()
     {
         // 获取表单上传文件 例如上传了001.jpg
-        $file = request()->file('i');
-        dump($file);
+        $file =$this-> request->file('i');
         // 移动到框架应用根目录/public/uploads/ 目录下
         if($file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                // 成功上传后 获取上传信息
-                // 输出 jpg
-                echo $info->getExtension();
-                // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
-                echo $info->getSaveName();
-                // 输出 42a79759f284b767dfcb2a0197904287.jpg
-                echo $info->getFilename(); 
+                $image_url=ROOT_PATH . 'public' . DS . 'uploads'.$info->getSaveName();
+                $session['name']=session('name');
+                $wher=array(
+                    'username'  =>  $session['name'],
+                    'status'    =>  1
+                );
+                $user=db('user')
+                        ->where($wher)
+                        ->field('uid')
+                        ->find();
+                
+                $uid=$user['uid'];
+                $data['head']=$info->getFileName();
+                $data['head_url']=$image_url;
+                $where=array(
+                    'iid'   =>  $uid,
+                );
+                $inf=db('info')->where($where)->update($data);
+                if ($inf) {
+                    return $this->success('上传成功','selfinfo/index'); 
+                } else {
+                    return $this->error('上传失败');
+                }
+                
             }else{
                 // 上传失败获取错误信息
                 echo $file->getError();
             }
         }
+
+        return $this->assign('head',$image_url);
+        return $this->fetch();
+    }
+
+    /**
+     * 退出登录，清空 session
+     */
+    public function exits()
+    {
+        session('name',null);
+        return $this->fetch('Login/login');
     }
 }

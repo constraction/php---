@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\selfinfo\self_info.html";i:1562751040;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562744318;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\selfinfo\self_info.html";i:1562810593;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562893797;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,7 +53,7 @@
 	    			<li><a href="<?php echo url('Reg/index'); ?>" target="_blank" >注册</a></li>
 				</ul>
 				<div class="headimg">
-						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="/static/index/img/ghs.png" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
+						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="<?php echo $head; ?>" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
 						<script src="/static/index/js/jquery.js"></script>
 						<script>
 							$(function()
@@ -134,15 +134,16 @@
 			</div>
 		</div>
 		<div class="rtcont fr">
-			<form method="post" enctype="multipart/form-data">
+			<form enctype="multipart/form-data" method="post" >
 					<div class="grzlbt ml40">我的资料</div>
 					<div class="subgrzl ml40"><span>昵称</span><span><input type="text" name="username" class="name" readonly value="<?php echo \think\Session::get('name'); ?>"></span><span><a href="">编辑</a></span></div>
 					<div class="subgrzl ml40"><span>手机号</span><span><input type="text" name="username" class="name" readonly value="15669097417"></span><span><a href="">编辑</a></span></div>
-					<div class="subgrzl ml40"><span>头像</span><span><input type="file" name="i"></span><span><a href="<?php echo url('Selfinfo/upload'); ?>">上传</a></span></div>
+					<div class="subgrzl ml40"><span>头像</span><span><input type="file" name="i" multiple></span><span><input type="submit" formaction="<?php echo url('Selfinfo/upload'); ?>" value="上传"></span></div>
 					<div class="subgrzl ml40"><span>个性签名</span><span><input type="text" name="username" class="name" readonly value="一支穿云箭，千军万马来相见！"></span><span><a href="">编辑</a></span></div>
 					<div class="subgrzl ml40"><span>我的爱好</span><span><input type="text" name="username" class="name" readonly value="游戏，音乐，旅游，健身"></span><span><a href="">编辑</a></span></div>
 					<div class="subgrzl ml40"><span>收货地址</span><span><input type="text" name="username" class="name" readonly value="浙江省杭州市江干区19号大街571号"></span><span><a href="">编辑</a></span></div>
-			</form>
+					<div class="subgrzl ml40"><span><a href="">修改密码</a></span><span><a href="">忘记密码</a></span><span><a href="<?php echo url('Selfinfo/exits'); ?>">退出登录</a></span></div>
+				</form>
 		</div>
 		<div class="clear"></div>
 		</div>
