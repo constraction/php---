@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\selfinfo\self_info.html";i:1562810593;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562893797;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\selfinfo\self_info.html";i:1562985473;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562985476;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,7 +53,7 @@
 	    			<li><a href="<?php echo url('Reg/index'); ?>" target="_blank" >注册</a></li>
 				</ul>
 				<div class="headimg">
-						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="<?php echo $head; ?>" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
+						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="<?php echo \think\Cookie::get('src'); ?>" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
 						<script src="/static/index/js/jquery.js"></script>
 						<script>
 							$(function()

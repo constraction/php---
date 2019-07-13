@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\index\index.html";i:1562662727;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562744318;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\phpStudy\WWW\tp5.0.24\public/../apps/index\view\index\index.html";i:1562662727;s:59:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\header.html";i:1562982664;s:57:"F:\phpStudy\WWW\tp5.0.24\apps\index\view\public\foot.html";i:1562568428;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -44,7 +44,7 @@
 	    			<li><a href="<?php echo url('Reg/index'); ?>" target="_blank" >注册</a></li>
 				</ul>
 				<div class="headimg">
-						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="/static/index/img/ghs.png" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
+						<a href="<?php echo url('Selfinfo/index'); ?>" ><img src="" alt="头像"  width="40px" height="40px" style="border-radius: 100%;"></a>
 						<script src="/static/index/js/jquery.js"></script>
 						<script>
 							$(function()

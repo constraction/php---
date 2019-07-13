@@ -1,7 +1,6 @@
 <?php
 namespace app\index\controller;
 use think\Request;
-use think\db;
 
 class Selfinfo extends \think\Controller
 {
@@ -21,7 +20,8 @@ class Selfinfo extends \think\Controller
         if($file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                $image_url=ROOT_PATH . 'public' . DS . 'uploads'.$info->getSaveName();
+                $image_url=ROOT_PATH . 'public' . DS . 'uploads'.'\\'.$info->getSaveName();
+                $su=str_replace("\\","/",$image_url);
                 $session['name']=session('name');
                 $wher=array(
                     'username'  =>  $session['name'],
@@ -34,13 +34,13 @@ class Selfinfo extends \think\Controller
                 
                 $uid=$user['uid'];
                 $data['head']=$info->getFileName();
-                $data['head_url']=$image_url;
+                $data['head_url']=$su;
                 $where=array(
                     'iid'   =>  $uid,
                 );
                 $inf=db('info')->where($where)->update($data);
                 if ($inf) {
-                    return $this->success('上传成功','selfinfo/index'); 
+                    return $this->success('上传成功','selfinfo/show'); 
                 } else {
                     return $this->error('上传失败');
                 }
@@ -50,11 +50,20 @@ class Selfinfo extends \think\Controller
                 echo $file->getError();
             }
         }
-
-        return $this->assign('head',$image_url);
-        return $this->fetch();
     }
 
+    /**
+     * 从数据库读取图片
+     */
+    public function show()
+    {
+        $info=db("info")
+                ->field('head_url')
+                ->find();
+        cookie('src',$info['head_url'],3600);
+        echo cookie('src');
+        
+    }
     /**
      * 退出登录，清空 session
      */
