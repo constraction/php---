@@ -20,7 +20,7 @@ class Selfinfo extends \think\Controller
         if($file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                $image_url=ROOT_PATH . 'public' . DS . 'uploads'.'\\'.$info->getSaveName();
+                $image_url= '/public' . DS . 'uploads'.'\\'.$info->getSaveName();
                 $su=str_replace("\\","/",$image_url);
                 $session['name']=session('name');
                 $wher=array(
@@ -60,9 +60,8 @@ class Selfinfo extends \think\Controller
         $info=db("info")
                 ->field('head_url')
                 ->find();
-        cookie('src',$info['head_url'],3600);
+        cookie('src',$info['head_url'],7200);
         echo cookie('src');
-        
     }
     /**
      * 退出登录，清空 session
